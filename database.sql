@@ -44,4 +44,9 @@ INSERT INTO notes (note_id,user_id,note_title,note_content,note_createdate,note_
 VALUES (1,1,"Usuario Uno","userone@user.com",NULL ,NULL,1 ),(2,1,"Usuario Uno de Nuevo","userone@user.com",NULL,NULL,0 ),(3,3,"Usuario Tres","userthree@user.com",NULL ,NULL,1 ),(4,4,"Usuario Cuatro","userfour@user.com",NULL,NULL,0),(5,5,"Usuario Cinco","userfive@user.com",NULL,NULL,1),(6,6,"Usuario Seis","usersix@user.com",NULL,NULL,0),(7,7,"Usuario Siete","userseven@user.com",NULL,NULL,1),(8,8,"Usuario Ocho","usereight@user.com",NULL,NULL,0),(9,9,"Usuario Nueve","usernine@user.com",NULL,NULL,0),(10,10,"Usuario Diez","userten@user.com",NULL,NULL,1);
 
 INSERT INTO categories (category_name)
-VALUES ("Música"),("Referencias a series"),("Recetas"),("Colores"),("Agenda de Contactos"),("Usuario y Pass"),("Sueños"),("Gran DT"),("Análisis de mercado"),("Tutoriales")
+VALUES ("Música"),("Referencias a series"),("Recetas"),("Colores"),("Agenda de Contactos"),("Usuario y Pass"),("Sueños"),("Gran DT"),("Análisis de mercado"),("Tutoriales");
+
+INSERT INTO notes_categories (note_id,category_id)
+values (1,1),(1,2),(1,3),(2,1),(2,2),(2,3),(3,1),(3,2),(3,3),(5,5);
+
+
